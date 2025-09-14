@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id" class="no-js">
+<head>
+    <!-- ✅ ENHANCED: Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nihongo | Web Developer & AI-Savvy Coder — Membangun website modern dengan pendekatan efisien & futuristik.">
+    <meta name="keywords" content="web developer, portfolio, AI co-pilot, modern web, JavaScript, CSS, HTML">
+    <meta name="author" content="Nihongo">
+    <meta name="theme-color" content="#080810">
+
+    <!-- ✅ ADVANCED: Open Graph & Twitter Card -->
+    <meta property="og:title" content="Nihongo | Web Developer">
+    <meta property="og:description" content="Web Developer & AI-Savvy Coder — Membangun website modern dengan pendekatan efisien & futuristik.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://plus.unsplash.com/premium_photo-1757330256709-94907b8642d3?q=80&w=1243">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nihongo | Web Developer">
+    <meta name="twitter:description" content="Web Developer & AI-Savvy Coder — Membangun website modern dengan pendekatan efisien & futuristik.">
+    <meta name="twitter:image" content="https://plus.unsplash.com/premium_photo-1757330256709-94907b8642d3?q=80&w=1243">
+
+    <title>Nihongo | Web Developer & AI-Savvy Coder</title>
+
+    <!-- ✅ ROBUST: Fallback styles if JS disabled -->
+    <noscript>
+        <style>
+            .hero-image img, .image-card img, .project-image img { opacity: 1; transform: none; }
+            .content-grid, .projects-grid, .section-desc { opacity: 1; transform: none; }
+            .hamburger { display: none !important; } /* Pastikan tetap tersembunyi jika JS mati */
+            .nav-menu { display: flex !important; flex-direction: row !important; position: static !important; } /* Tampilkan nav-menu secara horizontal jika JS mati */
+            .navbar { justify-content: space-between !important; }
+            .brand { position: static !important; left: auto !important; top: auto !important; transform: none !important; }
+        </style>
+    </noscript>
+
+    <!-- ✅ ENHANCED: Load styles with fallback -->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="screen">
+
+    <!-- ✅ ADVANCED: Structured Data (SEO Boost) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nihongo",
+        "url": "https://yourdomain.com",
+        "jobTitle": "Web Developer",
+        "description": "Self-taught web developer who believes in working smarter, not harder. Uses AI as co-pilot to build modern, efficient websites.",
+        "sameAs": [
+            "https://www.instagram.com/ikyletwar/",
+            "https://github.com/Nihongo-web"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- ✅ ADVANCED: Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ✅ ENHANCED: Navbar with ARIA labels -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="brand" aria-label="Brand: Nihongo">Nihongo</div>
+        <div class="nav-menu" id="navMenu" aria-label="Navigation menu">
+            <a href="#home" aria-label="Go to Home section">Home</a>
+            <a href="#about" aria-label="Go to About section">About</a>
+            <a href="#projects" aria-label="Go to Projects section">Projects</a>
+            <a href="#contact" aria-label="Go to Contact section">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+    </nav>
+
+    <main id="main-content">
+        <!-- ✅ ENHANCED: Hero Section with semantic markup -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title" lang="en">Hi, I’m <span>Nihongo</span></h1>
+                <p class="hero-subtitle" lang="en">Prompt Engineering & Vibe Coder</p>
+                <p class="hero-desc" lang="en">I build modern, interactive websites — with the power of AI as my co-pilot.</p>
+                <a href="#projects" class="btn-primary" aria-label="View my featured projects">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://plus.unsplash.com/premium_photo-1757330256709-94907b8642d3?q=80&w=1243&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                     alt="Nihongo, Web Developer Portrait" 
+                     width="500" 
+                     height="500"
+                     loading="eager"
+                     decoding="async">
+            </div>
+        </section>
+
+        <!-- ✅ ENHANCED: About Section -->
+        <section id="about" class="section" aria-labelledby="about-title">
+            <h2 id="about-title" class="section-title">About Me</h2>
+            <div class="content-grid" data-scroll>
+                <div class="text-content">
+                    <p>Self-taught web developer specializing in structure-first design and <strong>AI-assisted</strong> workflows. 
+                        Builds fast, scalable websites with full control over generation, debugging, and deployment.</p>
+                    <div class="social-links" aria-label="Social media links">
+                        <a href="https://www.instagram.com/ikyletwar/" target="_blank" rel="noopener noreferrer" aria-label="Visit my Instagram profile">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/Nihongo-web" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <div class="image-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1757330256709-94907b8642d3?q=80&w=1243&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Nihongo working on code" 
+                             width="400" 
+                             height="400"
+                             loading="lazy"
+                             decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ✅ ENHANCED: Projects Section -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <h2 id="projects-title" class="section-title">Featured Projects</h2>
+            <div class="projects-grid" data-scroll>
+                <article class="project-card" aria-labelledby="project1-title">
+                    <div class="project-image">
+                        <img src="https://source.unsplash.com/random/600x400?tech,1" 
+                             alt="AI Portfolio Generator project preview" 
+                             loading="lazy"
+                             decoding="async">
+                    </div>
+                    <div class="project-info">
+                        <h3 id="project1-title">AI Portfolio Generator</h3>
+                        <p>HTML/CSS/JS + AI Co-pilot</p>
+                        <a href="#" class="btn-secondary" aria-label="View details of AI Portfolio Generator project">View Project</a>
+                    </div>
+                </article>
+                <article class="project-card" aria-labelledby="project2-title">
+                    <div class="project-image">
+                        <img src="https://source.unsplash.com/random/600x400?tech,2" 
+                             alt="Dark Mode Toggle Pro project preview" 
+                             loading="lazy"
+                             decoding="async">
+                    </div>
+                    <div class="project-info">
+                        <h3 id="project2-title">Dark Mode Toggle Pro</h3>
+                        <p>CSS Animations + localStorage</p>
+                        <a href="#" class="btn-secondary" aria-label="View details of Dark Mode Toggle Pro project">View Project</a>
+                    </div>
+                </article>
+                <article class="project-card" aria-labelledby="project3-title">
+                    <div class="project-image">
+                        <img src="https://source.unsplash.com/random/600x400?tech,3" 
+                             alt="Responsive Navbar project preview" 
+                             loading="lazy"
+                             decoding="async">
+                    </div>
+                    <div class="project-info">
+                        <h3 id="project3-title">Responsive Navbar</h3>
+                        <p>Mobile-First + Hamburger Menu</p>
+                        <a href="#" class="btn-secondary" aria-label="View details of Responsive Navbar project">View Project</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ✅ ENHANCED: Contact Section -->
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <h2 id="contact-title" class="section-title">Let’s Work Together</h2>
+            <p class="section-desc" data-scroll>Have a project in mind? Let’s build something amazing.</p>
+            <a href="mailto:youremail@example.com" class="btn-primary" aria-label="Send me an email">Say Hello</a>
+        </section>
+    </main>
+
+    <!-- ✅ ENHANCED: Footer -->
+    <footer aria-label="Site footer">
+        <p>© 2025 Nihongo. Built with 💻 & AI Co-pilot.</p>
+    </footer>
+
+    <!-- ✅ ADVANCED: Defer JS for better performance -->
+    <script src="script.js" defer></script>
+
+    <!-- ✅ ENHANCED: Add no-js class remover -->
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+</body>
+</html>
